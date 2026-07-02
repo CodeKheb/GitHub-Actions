@@ -1,0 +1,14 @@
+name: Reset Test
+
+on: 
+  pull_request:
+
+jobs: 
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: remove file
+        run: rm addition.py
+
+
